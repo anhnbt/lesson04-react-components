@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./components/App";
+import Welcome from "./components/Welcome";
+import "./global.css"; // external
+import "bootstrap/dist/css/bootstrap.min.css";
+import SignIn from "./components/SignIn";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// JSX
+const element = <h1>Hello World!</h1>;
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Tên component phải viết hoa chữ cái đầu (để nó phân biệt với HTML element (phần tử HTML))
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// // Hàm nặc danh (anonymous function)
+// // "", '': String literal
+// // expression: biểu thức
+// const App = () => names.map((item) => <Headline value={item} />);
+
+// // Destructuring object (Tách đối tượng)
+// const Headline = ({ value }) => <p>Hello {value}</p>;
+
+const name = "Mr. Chiếnnn";
+
+{
+  /* String literal */
+}
+{
+  /* camelCase */
+}
+{
+  /* <Welcome color="red" name="Chiến" /> */
+}
+root.render(<SignIn />);
